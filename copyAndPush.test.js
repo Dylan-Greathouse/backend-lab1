@@ -6,4 +6,9 @@ describe('copyAndPush', () => {
         const num = copyAndPush(numbers, 4);
         expect(num).toEqual([1, 2, 3, 4]);
     });
+    it('should keep the original array of numbers', () => {
+        const numbers = [1, 2, 3];
+        const num = copyAndPush(...numbers, 4);
+        expect(num).toEqual([1, 2, 3, 4]);
+    });
 });
