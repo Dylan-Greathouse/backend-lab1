@@ -1,4 +1,4 @@
-import getName from './careerTrackLab';
+import getName from './getName';
 
 describe('getName', () => {
     it('should return a name key from an object', () => {
