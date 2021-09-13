@@ -8,7 +8,7 @@ describe('copyAndPush', () => {
     });
     it('should keep the original array of numbers', () => {
         const numbers = [1, 2, 3];
-        const num = copyAndPush(...numbers, 4);
-        expect(num).toEqual([1, 2, 3, 4]);
+        const num = copyAndPush(numbers, 5);
+        expect(num).toEqual([1, 2, 3, 5]);
     });
 });
