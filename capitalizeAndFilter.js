@@ -1,9 +1,10 @@
 const capitalizeAndFilter = (str) => {
-    for (let i = 0; i < str.length; i++) { 
-        str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
-    }
-    const newArr = str.filter(word => !word.startsWith('F') && !word.startsWith('f'));
-    return newArr;
+    const string = str.map((word) => 
+        word.charAt(0).toUpperCase() + word.slice(1)
+    );
+    const answer = string.filter(item => !item.startsWith('F') && !item.startsWith('f'));
+    console.log(answer);
+    return answer;
 };
 
 export default capitalizeAndFilter;
